@@ -16,7 +16,7 @@ dependencies {
 
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
 intellij {
-    version.set("2022.1.3")
+    version.set("2021.2")
     type.set("IC") // Target IDE Platform
 
     plugins.set(listOf("com.intellij.java", "Git4Idea"))
@@ -35,12 +35,12 @@ tasks {
     }
 
     signPlugin {
-        certificateChain.set(System.getenv("CERTIFICATE_CHAIN"))
-        privateKey.set(System.getenv("PRIVATE_KEY"))
-        password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
+        certificateChain.set(File(project.property("CERTIFICATE_CHAIN").toString()).readText(Charsets.UTF_8))
+        privateKey.set(File(project.property("PRIVATE_KEY").toString()).readText(Charsets.UTF_8))
+        password.set(project.property("PRIVATE_KEY_PASSWORD").toString())
     }
 
     publishPlugin {
-        token.set(System.getenv("PUBLISH_TOKEN"))
+        token.set(project.property("PUBLISH_TOKEN").toString())
     }
 }
