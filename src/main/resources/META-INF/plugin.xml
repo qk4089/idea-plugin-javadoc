@@ -14,9 +14,10 @@
        Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
   <description><![CDATA[
-  <h3>This plugin generate doc for java class elements</h3>
-  <p>built-in some variables related to VCS, code base on <b>JavaDoc</b> plugin, thanks the original author!</p>
+  <h3>This plugin generate Java class documents from templates</h3>
+  <p>built-in some VCS variables</p>
   <p>detail see: <a href="https://github.com/qk4089/idea-plugin-javadoc">https://github.com/qk4089/idea-plugin-javadoc</a></p>
+  <br/><p>code base on <b>JavaDoc Plugin</b>, thanks to the original author</p>
   ]]></description>
 
   <!-- Product and plugin compatibility requirements.

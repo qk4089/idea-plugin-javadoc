@@ -54,6 +54,9 @@ public class JavaDocUtils {
     }
     Map<String, Collection<String>> newTags = newJavaDoc.getTags();
     Map<String, Collection<String>> tags = new LinkedHashMap<>(oldJavaDoc.getTags());
+    tags.remove("author");
+    tags.remove("author:");
+    tags.remove("author :");
     newTags.forEach((key, value) -> {
       if (!tags.containsKey(key)) {
         tags.put(key, value);

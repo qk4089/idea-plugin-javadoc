@@ -5,9 +5,9 @@
 /**
  * ${NAME}
  *
- * @Author: ${COMMIT_USER}
- * @ModuleOwner: ${COMMIT_USER}
- * @since ${COMMIT_DATE}
+ * @Author: ${FIRST_COMMIT_USER}
+ * @ModuleOwner: ${FIRST_COMMIT_USER}
+ * @since ${FIRST_COMMIT_DATE}
  */
     </template>
   </class>
